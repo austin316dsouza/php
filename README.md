@@ -6,5 +6,5 @@ yum update -y
 yum install httpd -y
 chkconfig httpd on
 cd/var/www/html
-aws s3 syns s3://bucketname/cd/var/www/html
+aws s3 sync s3://bucketname /cd/var/www/html
 service httpd start
